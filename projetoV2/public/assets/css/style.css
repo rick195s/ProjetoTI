@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+/* Para colocarmos uma imagem de fundo usámos a propriedade background-image.
+Como queríamos colocar o formul */
+#login-container {
+    background-image: url("../images/bg_index.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#login-row {
+    height: 80%;
+    align-items: center;
+}
+
+#dashboard-container {
+    background-image: url("../images/bg_dashboard.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 1000px;
+}
+
+/*Box where login form its in*/
+
+#login-box {
+    border-radius: 20px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.form-login {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-login .form-control {
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.form-login .btn {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    background-color: #4f6589;
+    margin-bottom: 15px;
+}
+
+#login-container .alert {
+    border-radius: 0px 0px 15px 15px;
+    filter: drop-shadow(2px 4px 6px red);
+    color: white;
+    opacity: 0.9;
+    border: 0;
+}
+
+#login-container .icon-danger {
+    position: absolute;
+    right: 15px;
+    bottom: 25%;
+    width: 50px;
+    height: 50px;
+}
+
+#container-403 {
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+#container-403 .icon-danger {
+    width: 250px;
+    height: 250px;
+}
+#history-body {
+    background-color: #e3e3e3;
+    color: black;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 250px;
+    min-width: 150px;
+    height: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+}
+
+.card-red {
+    box-shadow: 0px 1px 12px 1px rgba(255, 0, 0, 0.5);
+    border: solid 1px rgba(255, 0, 0, 0.89);
+}
+.card-green {
+    box-shadow: 0px 1px 12px 1px rgba(96, 213, 99, 0.75);
+    border: solid 1px rgba(96, 213, 99, 0.89);
+}
+.card-yellow {
+    box-shadow: 0px 1px 12px 1px rgba(247, 241, 106, 0.75);
+    border: solid 1px rgba(247, 241, 106, 0.89);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.circle-red {
+    box-shadow: 0px 4px 12px 4px rgba(255, 0, 0, 0.25);
+    background-color: red;
+}
+
+.circle-green {
+    box-shadow: 0px 4px 12px 4px rgba(96, 213, 99, 0.25);
+    background-color: #60d563;
+}
+
+.circle-yellow {
+    box-shadow: 0px 4px 12px 4px rgba(247, 241, 106, 025);
+    background-color: #f7f16a;
+}

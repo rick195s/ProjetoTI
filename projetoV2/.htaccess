@@ -1,0 +1,24 @@
+# Para uma melhor organização do projeto optamos por adotar um método muito utilizado em php
+# com o nome de MVC (Model, View, Controller).  
+# No código seguinte estamos a ativar o mode RewriteEngine para facilitar o modo como o utilizador
+# é redirecionado pelo website. Para tal defenimos uma regra de reescrita do url. 
+# Sempre que o utilizador alterar o url ele será redirecionado para o index.php, onde depois o novo
+# url irá ser verificado de forma a postriormente o utilizador ser redirecionado para a route que
+# o mesmo introduziu  
+
+<IfModule mod_rewrite.c>
+    Options -Multiviews
+    RewriteEngine on
+
+    # Se o ficheiro existir esta condição irá fazer com que esse url não seja trocado, logo o website irá
+    # conseguir aceder ao ficheiro 
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    # QSA (Query String Append)
+
+    RewriteRule ^(.*)$ public/index.php?$1 [L,QSA]
+
+    
+
+</IfModule>
